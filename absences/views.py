@@ -65,7 +65,7 @@ def reporte(request):
             (empleado, vacaciones, enfermedad, compensacion, calamidad, certificado)
         )
         # View code here...
-        t = loader.get_template("absences/reporte.html")
-        c = {"reportes": printempleados}
-        return render(request, "absences/reporte.html", c)
-        # return HttpResponse(t.render(c, request), content_type="application/xhtml+xml")
+    t = loader.get_template("absences/reporte.html")
+    c = {"reportes": printempleados}
+    return render(request, "absences/reporte.html", c)
+    # return HttpResponse(t.render(c, request), content_type="application/xhtml+xml")
