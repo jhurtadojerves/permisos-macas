@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <ul>
+        {% for absence in absences %}
+            <li>{{ absence }}</li>
+        {% endfor %}
+    </ul>
+    <a class="btn btn-secondary" href="registrar/" role="button">Registrar</a>
+
+{% endblock content %}
+
+
+

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <ul>
+        {% for employee in employees %}
+            <li>{{ employee }}</li>
+        {% endfor %}
+    </ul>
+    <a class="btn btn-secondary" href="registrar/" role="button">Registrar</a>
+{% endblock content %}

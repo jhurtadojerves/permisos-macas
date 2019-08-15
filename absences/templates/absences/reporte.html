@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <table class="table">
+        <tr>
+            <td>empleado</td>
+            <td>vacaciones</td>
+            <td>enfermedad</td>
+            <td>compensacion</td>
+            <td>calamidad</td>
+            <td>certificado</td>
+        </tr>
+        {% for reporte in reportes %}
+            <tr>
+                {% for c in reporte %}
+                <td>{{ c }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock content %}
+
+
+
